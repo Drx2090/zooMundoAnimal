@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/zoologico/imagenes/iconzoo.jpg">
+    <title>Formulario del Zoológico</title>
+</head>
+<body>
+    <h1 style="text-align: center; color:rgba(96, 43, 240, 0.74); font-family: Trebuchet MS, sans-serif" ;>Registro de Animales Silvestres</h1>
+    <p style="text-align: center; font-family: Comic Sans MS, sans-serif; color:blueviolet">-Por favor, llene este formulario con los datos del animal para su registro en el zoológico-</p>
+    <form action="gracias.html" method="get">
+        <label for="nombre"; style="color:rgb(61, 124, 1)"><strong>1. Nombre del animal:</strong></label>
+        <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Escriba nombre del animal">
+        <br><br>
+        <label for="especie"; style="color:rgb(197, 108, 25)"><strong>2. Especie del animal:</strong></label>
+        <input
+            type="text"
+            id="especie"
+            name="especie"
+            placeholder="Escriba especie del animal">
+        <br><br>
+        <label for="edad"; style="color:rgb(61, 124, 1)"><strong>3. Edad del animal:</strong></label>
+        <input
+            type="number"
+            id="edad"
+            name="edad"
+            placeholder="Ingrese edad del animal">
+        <br><br>
+        <label for="fecha"; style="color:rgb(197, 108, 25)"><strong>4. Fecha de nacimiento:</strong></label>
+        <input
+            type="date"
+            id="fecha"
+            name="fecha">
+        <br><br>
+        <label for="cuidador"; style="color:rgb(61, 124, 1)"><strong>5. Nombre del cuidador:</strong></label>
+        <input
+            type="text"
+            id="cuidador"
+            name="cuidador"
+            placeholder="Escriba nombre del cuidador">
+        <br><br>
+        <label for="sexo"; style="color:rgb(197, 108, 25)"><strong>6. Sexo del animal:</strong></label>
+        <br>
+        <input 
+            type="radio"
+            id="macho"
+            name="sexo">
+            <label for="macho">Macho</label>
+        <br>
+        <input
+            type="radio"
+            id="hembra"
+            name="sexo">
+            <label for="hembra">Hembra</label>
+        <br><br>
+        <label for="peso"; style="color:rgb(61, 124, 1)"><strong>7. Peso del animal (en kg):</strong></label>
+        <input
+            type="number"
+            id="peso"
+            name="peso"
+            placeholder="Ingrese peso del animal"
+            step="0.1">
+        <br><br>
+        <label for="pais"; style="color:rgb(197, 108, 25)"><strong>8. País de origen:</strong></label>
+        <input
+            type="text"
+            id="pais"
+            name="pais"
+            placeholder="Escriba el país de origen">
+        <br><br>
+        <label for="alimentacion"; style="color:rgb(61, 124, 1)"><strong>9. Tipo de alimentación:</strong></label>
+        <select id="alimentacion" name="alimentacion">
+            <option value="" selected disabled>Selecciona una opción</option>
+            <option value="carnivoro">Carnívoro</option>
+            <option value="herbivoro">Herbívoro</option>
+            <option value="omnivoro">Omnívoro</option>
+        </select>
+        <br><br>
+        <label for="area"; style="color:rgb(197, 108, 25)"><strong>10. Área del zoológico:</strong></label>
+        <select id="area" name="area">
+            <option value="" selected disabled>Selecciona una opción</option>
+            <option value="felinos">Zona de Felinos</option>
+            <option value="aves">Zona de Aves</option>
+            <option value="reptiles">Zona de Reptiles</option>
+            <option value="mamiferos">Zona de Mamíferos</option>
+        </select>
+        <br><br>
+        <label for="cuidados"; style="color:rgb(61, 124, 1)"><strong>11. Cuidados especiales:</strong></label>
+        <br>
+        <input
+            type="checkbox"
+            id="alimentacion_especial"
+            name="cuidados"
+            value="Alimentación especial">
+        <label for="alimentacion_especial">Alimentación especial</label>
+        <br>
+        <input
+            type="checkbox"
+            id="supervision"
+            name="cuidados"
+            value="Supervisión veterinaria">
+        <label for="supervision">Supervisión veterinaria</label>
+        <br>
+        <input
+            type="checkbox"
+            id="habitat"
+            name="cuidados"
+            value="Habitat acondicionado">
+        <label for="habitat">Habitat acondicionado</label>
+        <br><br>
+        <label for="observaciones"; style="color:rgb(197, 108, 25)"><strong>12. Observaciones:</strong></label>
+        <br>
+        <textarea
+            id="observaciones"
+            name="observaciones"
+            rows="4"
+            cols="40"
+            placeholder="Describe características del animal"></textarea>
+        <br><br>
+        <label for="correo"; style="color:rgb(61, 124, 1)"><strong>13. Correo electrónico del cuidador:</strong></label>
+        <input
+            type="email"
+            id="correo"
+            name="correo"
+            placeholder="cuidador@correo.com">
+        <br><br>
+        <label for="fotografia"; style="color:rgb(197, 108, 25)"><strong>14. Fotografía del animal:</strong></label>
+        <input
+            type="file"
+            id="fotografia"
+            name="fotografia">
+        <br><br>
+        <label for="color"; style="color:rgb(61, 124, 1)"><strong>15. Color de identificación:</strong></label>
+        <input
+            type="color"
+            id="color"
+            name="color">
+        <br><br>
+        <button type="submit">Enviar Registro</button>
+    </form>
+</body>
+</html>
